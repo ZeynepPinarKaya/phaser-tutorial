@@ -1,5 +1,5 @@
 var game;
-
+var testObj;
 window.onload = function()
 {
 var config = {
@@ -7,6 +7,12 @@ var config = {
         width: 480,
         height: 640,
         parent: 'phaser-game',
+        physics: {
+        default: 'arcade',
+        arcade: {
+            debug: false
+        }
+    },
         scene: [SceneMain]
     };
 
